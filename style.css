@@ -1,0 +1,158 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#acciones, #lista-inventario, #formulario-agregar {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#acciones button {
+    padding: 8px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+}
+
+#acciones button:hover {
+    background-color: #4cae4c;
+}
+
+#acciones input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#lista-inventario h2, #formulario-agregar h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+.editar, .eliminar {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.editar {
+    background-color: #007bff;
+    color: white;
+    margin-right: 5px;
+}
+
+.editar:hover {
+    background-color: #0056b3;
+}
+
+.eliminar {
+    background-color: #dc3545;
+    color: white;
+}
+
+.eliminar:hover {
+    background-color: #c82333;
+}
+
+#formulario-agregar label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#formulario-agregar input[type="text"],
+#formulario-agregar input[type="number"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#formulario-agregar button[type="submit"],
+#formulario-agregar button[type="button"] {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#formulario-agregar button[type="submit"] {
+    background-color: #28a745;
+}
+
+#formulario-agregar button[type="submit"]:hover {
+    background-color: #1e7e34;
+}
+
+#formulario-agregar button[type="button"] {
+    background-color: #6c757d;
+}
+
+#formulario-agregar button[type="button"]:hover {
+    background-color: #5a6268;
+}
+
+.oculto {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+}
